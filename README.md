@@ -1,0 +1,1 @@
+Page for "the comforts of home"
