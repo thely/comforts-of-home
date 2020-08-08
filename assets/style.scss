@@ -118,3 +118,9 @@ span.num {
 .statements .top {
   margin: 0 auto;
 }
+
+.slides section:nth-of-type(0) {
+  span {
+    display: block;
+  }
+}
