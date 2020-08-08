@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>the comforts of home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <link rel="stylesheet" href="{{ "/assets/lib/reveal.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Manjari&family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="reveal">
+			<div class="slides">
+        {{ content }}
+      </div>
+    </div>
+    <script src="{{ "/assets/lib/reveal.js" | relative_url }}"></script>
+    <script src="{{ "/assets/slides.js" | relative_url }}" defer></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+:root {
+  --calm-font: "Manjari";
+  --num-font: 'Major Mono Display', monospace;
+  --hard-font: 'Montserrat', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width:100%;
+/*   overflow: hidden */
+}
+h1 {
+  color: fuchsia;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.content-parent, #canvas-parent {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+.content-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  z-index: 10;
+}
+
+.main-text {
+  font-size: 2em;
+  text-align: center;
+}
+
+.content-parent.black {
+  background-color: black;
+  color: white;
+}
+
+.content-parent,
+.content-parent.white {
+  background-color: white;
+  color: black;
+}
+
+.reveal {
+  background-color: black;
+}
+
+.reveal .slides section:not(.white):not(.statements) {
+  text-align: left;
+  top: 0 !important;
+}
+
+h3, p {
+  color: white;
+  font-family: var(--calm-font);
+}
+
+p {
+  font-size: 3em;
+}
+
+.top {
+  font-size: 5em;
+  width: 60%;
+}
+
+.rules {
+  clear: both;
+  font-size: 4em;
+  width: 90%;
+}
+
+span.num {
+  /* display: inline-block; */
+  color: red;
+  float: left;
+  font-family: var(--num-font);
+  font-size: 2.4em;
+  /* line-height: 0.6; */
+  margin-right: 0.2em;
+  margin-top: -0.19em;
+}
+
+.on-white {
+  color: red;
+  font-family: var(--hard-font);
+  font-size: 16em;
+  text-align: center;
+  max-width: 100%;
+}
+
+.on-white.oversize {
+  margin-top: 0;
+  line-height: 0.5;
+}
+
+.on-white.green {
+  color: #5f5;
+}
+
+.on-white.red {
+  color: red;
+}
+
+.statements {
+  text-align: center;
+}
+
+.statements .top {
+  margin: 0 auto;
+}
